@@ -1,0 +1,233 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,23,121,0.6980042016806722) 35%, rgba(0,212,255,1) 100%);
+  }
+  main {
+    margin-top: 50px;
+  }
+
+  #showcase {
+    background: linear-gradient(
+        to bottom,
+        rgba(252, 153, 124, 0.2),
+        rgba(252, 153, 124, 0.2)
+      ),
+      url("bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 10px;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+  }
+  #showcase .content {
+    color: white;
+    font-size: 30px;
+    background-color: rgba(46, 76, 109, 0.3);
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .main-header {
+    background-color: #3EECAC;
+    background-color: #74EBD5;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+        padding: 8px 16px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0px;
+    height: 50px;
+  }
+
+  .main-nav {
+    display: inline-block;
+    width: calc(100% - 101px);
+    text-align: right;
+    font-family: "Roboto", sans-serif;
+  }
+  .main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .main-nav__item {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .main-header__logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 21px;
+  }
+
+  .main-nav__item a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .main-nav__item a:hover,
+  .main-nav__item:hover::before {
+    color: #2e4c6d;
+  }
+
+  .main-nav__item:active::before,
+  .main-nav__item a:active {
+    color: #fff;
+  }
+
+  .main-nav__item::before {
+    content: "\2022";
+    color: #fff;
+  }
+
+  .main-nav__item--login a {
+    color: #fff;
+    background-color: #2e4c6d;
+    padding: 4px 16px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+  }
+
+  .main-nav__item--login a:hover {
+    color: #2e4c6d;
+    border: 2px solid #2e4c6d;
+    background-color: #fff;
+  }
+
+  .main-nav__item--login::before {
+    content: none;
+  }
+.signup-page{
+    padding-top: 20px;
+} 
+.signup-title {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.signup-form {
+    width: 500px;
+    margin: auto;
+    color: white;
+}
+
+.signup-form label,
+.signup-form input:not([type="checkbox"]),
+.signup-form select {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.signup-form input[type="checkbox"],
+.signup-form input[type="checkbox"] + label {
+    display: inline-block;
+    width: auto;
+    margin-top: 15px;
+
+}
+
+.signup-form button[type="submit"] {
+    display: block;
+    margin-top: 15px;
+
+}
+
+.signup-form input:not([type="checkbox"]),
+.signup-form select {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+
+}
+
+.signup-form input:not([type="checkbox"]):focus,
+.signup-form select:focus {
+    outline: none;
+    background-color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+    
+    
+
+}
+
+.signup-form input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #2E4C6d;
+    vertical-align: bottom;
+    border-radius: 50%;
+}
+
+.signup-form input[type="checkbox"]:hover {
+    background: gray;
+}
+
+.signup-form input[type="checkbox"]:checked {
+    background: #FC997C;
+}
+#backtotop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+  #backtotop i {
+    color: #2e4c6d;
+    font-size: 45px;
+    transition: color 0.6s;
+  }
+  #backtotop i:hover {
+    color: #050801;
+  }
+
+  button {
+    padding: 20px;
+    color: #fc997c;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: black;
+    font-family: Courier New, monospace;
+    border-radius: 5px;
+    margin-top: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    position: relative;
+    top: 1px;
+  }
+  button:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+      0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  #agree-terms{
+    color: white;
+    
+  }
